@@ -13,7 +13,7 @@ function App() {
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState(75);
-  const [date, setdate] = useState("11/07/2022, 15:33:30");
+  const [date, setdate] = useState("11/07/2022, 17:01:30");
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
