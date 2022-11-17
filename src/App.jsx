@@ -8,7 +8,7 @@ import html2canvas from "html2canvas";
 function App() {
   const [coin, setCoin] = useState("BTCUSDT");
   const [entryPrice, setEntryPrice] = useState("16956");
-  const [closingPrice, setClosingPrice] = useState("19773");
+  const [closingPrice, setClosingPrice] = useState("16773");
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
