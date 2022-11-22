@@ -6,9 +6,9 @@ import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
-  const [coin, setCoin] = useState("ETHUSDT");
-  const [entryPrice, setEntryPrice] = useState("1210");
-  const [closingPrice, setClosingPrice] = useState("1194");
+  const [coin, setCoin] = useState("BTCUSDT");
+  const [entryPrice, setEntryPrice] = useState("15922");
+  const [closingPrice, setClosingPrice] = useState("16324");
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
