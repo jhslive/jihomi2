@@ -6,14 +6,14 @@ import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
-  const [coin, setCoin] = useState("BTCUSDT");
-  const [entryPrice, setEntryPrice] = useState("16918");
-  const [closingPrice, setClosingPrice] = useState("16776");
+  const [coin, setCoin] = useState("DOGEUSDT");
+  const [entryPrice, setEntryPrice] = useState("0.07425");
+  const [closingPrice, setClosingPrice] = useState("0.07342");
   const [isLong, setIsLong] = useState(false);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState("75.00");
-  const [date, setdate] = useState("12/21/2022, 14:00:30");
+  const [date, setdate] = useState("12/22/2022, 11:05:30");
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
