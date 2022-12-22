@@ -9,7 +9,7 @@ function App() {
   const [coin, setCoin] = useState("BTCUSDT");
   const [entryPrice, setEntryPrice] = useState("16918");
   const [closingPrice, setClosingPrice] = useState("16776");
-  const [isLong, setIsLong] = useState(true);
+  const [isLong, setIsLong] = useState(false);
   const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
   const [numLocLR, setNumLocLR] = useState(1000);
   const [leverage, setLeverage] = useState("75.00");
