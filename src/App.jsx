@@ -6,13 +6,13 @@ import tanguPic from "./tangu.png";
 import html2canvas from "html2canvas";
 
 function App() {
-  const [coin, setCoin] = useState("DOGEUSDT");
-  const [entryPrice, setEntryPrice] = useState("0.07425");
-  const [closingPrice, setClosingPrice] = useState("0.07342");
-  const [isLong, setIsLong] = useState(false);
-  const [numsLoc, setNumsLoc] = useState([227, 570, 570]);
-  const [numLocLR, setNumLocLR] = useState(1000);
-  const [leverage, setLeverage] = useState("75.00");
+  const [coin, setCoin] = useState("BTCUSDT");
+  const [entryPrice, setEntryPrice] = useState("20868");
+  const [closingPrice, setClosingPrice] = useState("20681");
+  const [isLong, setIsLong] = useState(true);
+  const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
+  const [numLocLR, setNumLocLR] = useState(0);
+  const [leverage, setLeverage] = useState("30.00");
   const [date, setdate] = useState("12/22/2022, 11:05:30");
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
@@ -125,15 +125,15 @@ function App() {
       </span>  
       <br />
       <br />
-      <button onClick={up}>숫자 위로</button>
+      <button onClick={up}>이름 위로</button>
       <br />
       <br />
-      <button onClick={left}>숫자 좌로</button>
+      <button onClick={left}>이름 좌로</button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button onClick={right}>숫자 우로</button>
+      <button onClick={right}>이름 우로</button>
       <br />
       <br />
-      <button onClick={down}>숫자 아래로</button>
+      <button onClick={down}>이름 아래로</button>
       <br />
       <br />
       <button onClick={downLoad}>다운로드</button>
@@ -154,8 +154,8 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: "85px",
-              top: "160px",
+              left: numLocLR + 85 + "px",
+              top: numsLoc[0] + 160 + "px",
               fontSize:"42px",
               color: "rgb(254,254,254)",
               fontFamily: "HarmonyOS Sans",
@@ -163,14 +163,14 @@ function App() {
 
             }}
           >
-            {coin}
+            {coin} Perpetual
           </div>
          
           <div
             style={{
               position: "absolute",
-              left: "190px",
-              top: numsLoc[0] + "px",
+              left: "200px",
+              top: "227px",
               fontSize: "28px",
               color: "RGB(126,126,126)",
               fontFamily: "HarmonyOS Sans",
@@ -183,8 +183,8 @@ function App() {
           <div
             style={{
               position: "absolute",
-              left: numLocLR - 915 + "px",
-              top: numsLoc[1] + "px",
+              left:"85px",
+              top: "570px",
               fontSize: "30px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
@@ -192,13 +192,13 @@ function App() {
 
             }}
           >
-             ₮ {entryPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            ₮ {(Number(entryPrice)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
               position: "absolute",
-              left: numLocLR - 730 + "px",
-              top: numsLoc[2] + "px",
+              left: "270px",
+              top: "570px",
               fontSize: "30px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
@@ -206,13 +206,13 @@ function App() {
 
             }}
           >
-            ₮ {closingPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+            ₮ {(Number(closingPrice)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
           </div>
           <div
             style={{
               position: "absolute",
               left: "235px",
-              top: "730px",
+              top: "731px",
               fontSize: "28px",
               color: "white",
               fontFamily: "HarmonyOS Sans",
