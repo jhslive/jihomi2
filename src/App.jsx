@@ -9,7 +9,7 @@ function App() {
   const [coin, setCoin] = useState("DOGEUSDT");
   const [entryPrice, setEntryPrice] = useState("0.07425");
   const [closingPrice, setClosingPrice] = useState("0.07342");
-  const [isLong, setIsLong] = useState(true);
+  const [isLong, setIsLong] = useState(false);
   const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
   const [numLocLR, setNumLocLR] = useState(0);
   const [leverage, setLeverage] = useState("70.00");
