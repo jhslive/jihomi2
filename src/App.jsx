@@ -7,8 +7,8 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("DOGEUSDT");
-  const [entryPrice, setEntryPrice] = useState("0.07425");
-  const [closingPrice, setClosingPrice] = useState("0.07342");
+  const [entryPrice, setEntryPrice] = useState("0.07659");
+  const [closingPrice, setClosingPrice] = useState("0.07877");
   const [isLong, setIsLong] = useState(false);
   const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
   const [numLocLR, setNumLocLR] = useState(0);
