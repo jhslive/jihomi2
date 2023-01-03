@@ -12,7 +12,7 @@ function App() {
   const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
   const [numLocLR, setNumLocLR] = useState(0);
-  const [leverage, setLeverage] = useState("75.00");
+  const [leverage, setLeverage] = useState("75");
   const [date, setdate] = useState("01/02/2023, 14:53:30");
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
@@ -178,7 +178,7 @@ function App() {
 
             }}
           >
-            {leverage}X
+            {leverage.toString(2)}X
           </div>
           <div
             style={{
