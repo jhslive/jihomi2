@@ -9,7 +9,7 @@ function App() {
   const [coin, setCoin] = useState("XRPUSDT");
   const [entryPrice, setEntryPrice] = useState("0.34367");
   const [closingPrice, setClosingPrice] = useState("0.35119");
-  const [isLong, setIsLong] = useState(True);
+  const [isLong, setIsLong] = useState(true);
   const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
   const [numLocLR, setNumLocLR] = useState(0);
   const [leverage, setLeverage] = useState("75");
