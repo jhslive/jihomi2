@@ -7,13 +7,13 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("XRPUSDT");
-  const [entryPrice, setEntryPrice] = useState("0.33687");
-  const [closingPrice, setClosingPrice] = useState("0.33110");
-  const [isLong, setIsLong] = useState(false);
+  const [entryPrice, setEntryPrice] = useState("0.34367");
+  const [closingPrice, setClosingPrice] = useState("0.35119");
+  const [isLong, setIsLong] = useState(True);
   const [numsLoc, setNumsLoc] = useState([0, 0, 0]);
   const [numLocLR, setNumLocLR] = useState(0);
   const [leverage, setLeverage] = useState("75");
-  const [date, setdate] = useState("01/06/2023, 15:43:30");
+  const [date, setdate] = useState("01/09/2023, 10:49:30");
   const [result, setResult] = useState(
     ((closingPrice / entryPrice - 1) * 75 * 100).toFixed(2)
   );
